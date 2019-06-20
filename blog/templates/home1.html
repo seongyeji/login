@@ -1,0 +1,19 @@
+{% comment %} {{blogs.all()}} {% endcomment %}
+{% comment %} 객체에 있는 모든 쿼리셋을 가져와라 {% endcomment %}
+
+{% comment %} 
+.count() 데이터의 갯수
+.first() 첫번째 객체
+.last() 마지막 객체를 반환하라 
+{% endcomment %}
+
+{% for blog in blogs.all %}
+{% comment %} 
+블로그에 있는 블로그에 있는 모든 쿼리셋을 가져와라 
+무슨 형식으로? 다음형식으로
+{% endcomment %}
+    <h1> {{blog.title}} </h1>
+    <p> {{blog.pub_date}} </p>
+    <p> {{blog.body}} </p>
+    <br><br>
+{% endfor %}
