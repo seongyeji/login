@@ -1,5 +1,12 @@
+{% extends 'base.html' %}
+{% comment %} 우선순위 짱 높음 {% endcomment %}
+
+{% block contents %}
+<body>
     <h1>본문내용</h1>
     <br><br>
     <h1> 제목 : {{details.title}} </h1>
     <p> 작성 날짜 : {{details.pub_date}} </p>
     <p> 본문 미리보기 : {{details.body}} </p>
+</body>
+{% endblock  %}

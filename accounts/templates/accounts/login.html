@@ -1,9 +1,11 @@
+{% extends 'base.html' %}
+{% comment %} 우선순위 짱 높음 {% endcomment %}
 
-
+{% block contents %}
+<body>
 <div class="container">
 
     <h1>Login</h1>
-
     <form method = "POST" action="{% url 'login' %}">
 
 
@@ -20,3 +22,5 @@
         <input class="btn btn-primary" type="submit" value="Sign Up!">
     </form>
 </div>
+</body>
+{% endblock  %}
